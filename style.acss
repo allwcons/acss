@@ -1,0 +1,20 @@
+
+    .btn:@mousedown as lolol;
+    :root{
+        $font_size: 10px;
+        $a: 1;
+        $width:50px;
+        $height:100px;
+    }
+	.btn{
+	    background-color: if @mousedown ? red > green;
+	    width: $width;
+	    height: 100px;
+	    color: if @mousedown ? lightblue > yellow;
+	}
+	.card{
+		background:green;
+        width:if @lolol ? $width * 2 > 200px;
+        transition:width 0.5s;
+	    height: if @mousedown ? $height > 300px;
+	}
