@@ -4,7 +4,7 @@
         $font_size: 10px;
         $a: 1;
         $width:50px;
-        $height:100px;
+        $height:20px;
     }
 	.btn{
 	    background-color: if @mousedown ? red > green;
@@ -14,7 +14,7 @@
 	}
 	.card{
 		background:green;
-        width:if @lolol ? $width * 2 > 200px;
+        width:if @lolol ? $width > 30px;
         transition:width 0.5s;
-	    height: if @mousedown ? $height > 300px;
+	    height: if @mousedown ? $height > 200px;
 	}

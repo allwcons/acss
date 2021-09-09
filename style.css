@@ -3,25 +3,25 @@
         --font_size: 10px;
         --a: 1;
         --width:50px;
-        --height:100px;
+        --height:20px;
     }
 	.btn{
---if_ea453c27-29a8-4acf-acde-1ac835b0b92f:red ;--else_ea453c27-29a8-4acf-acde-1ac835b0b92f:green;
+--if_57ea078a-edae-455c-8cc6-ed1b74451927:red ;--else_57ea078a-edae-455c-8cc6-ed1b74451927:green;
 
-	    background-color: var(--else_ea453c27-29a8-4acf-acde-1ac835b0b92f,var(--if_ea453c27-29a8-4acf-acde-1ac835b0b92f));
+	    background-color: var(--else_57ea078a-edae-455c-8cc6-ed1b74451927,var(--if_57ea078a-edae-455c-8cc6-ed1b74451927));
 	    width: var(--width);
 	    height: 100px;
---if_3b95c042-239f-4a5e-addc-303d00bef269:lightblue ;--else_3b95c042-239f-4a5e-addc-303d00bef269:yellow;
+--if_46174644-4e80-48b1-8276-4e812bbabe97:lightblue ;--else_46174644-4e80-48b1-8276-4e812bbabe97:yellow;
 
-	    color: var(--else_3b95c042-239f-4a5e-addc-303d00bef269,var(--if_3b95c042-239f-4a5e-addc-303d00bef269));
+	    color: var(--else_46174644-4e80-48b1-8276-4e812bbabe97,var(--if_46174644-4e80-48b1-8276-4e812bbabe97));
 	}
 	.card{
-		background:rgb(128, 73, 0);
---if_1e79e499-7970-46d5-8dc6-8efb11e5508d:var(--width) * 2 ;--else_1e79e499-7970-46d5-8dc6-8efb11e5508d:200px;
+		background:green;
+--if_1be617a1-7bad-48c5-bbaa-08643a682d9e:var(--width) ;--else_1be617a1-7bad-48c5-bbaa-08643a682d9e:30px;
 
-        width:calc(var(--else_1e79e499-7970-46d5-8dc6-8efb11e5508d,var(--if_1e79e499-7970-46d5-8dc6-8efb11e5508d)));
+        width:var(--else_1be617a1-7bad-48c5-bbaa-08643a682d9e,var(--if_1be617a1-7bad-48c5-bbaa-08643a682d9e));
         transition:width 0.5s;
---if_ae179431-89df-4879-8290-d0c7432610b2:var(--height) ;--else_ae179431-89df-4879-8290-d0c7432610b2:300px;
+--if_5941ae05-0531-4516-9b67-b8d5652bec71:var(--height) ;--else_5941ae05-0531-4516-9b67-b8d5652bec71:200px;
 
-	    height: var(--else_ae179431-89df-4879-8290-d0c7432610b2,var(--if_ae179431-89df-4879-8290-d0c7432610b2));
+	    height: var(--else_5941ae05-0531-4516-9b67-b8d5652bec71,var(--if_5941ae05-0531-4516-9b67-b8d5652bec71));
 	}

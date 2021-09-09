@@ -15,7 +15,6 @@ function installAcss(){
 
     let builtin_event = {
         "mousedown":"mouseup",
-        "mouseup":"mousedown",
         "keydown":"keyup"
     }
 
@@ -27,7 +26,9 @@ function installAcss(){
             if(builtin_event[state._event]){
 
                 elts[j].addEventListener(state._event,onmainevent(state._if,state._else,state.key))
+                window.addEventListener(state._event,()=>{})
                 elts[j].addEventListener(builtin_event[state._event],onsecondaryevent(state._if,state._else,state.key))
+                window.addEventListener(builtin_event[state._event],onsecondaryevent(state._if,state._else,state.key,elts[j]))
             }else{
                 for(let k = 0;k  <external_selector.length;k++){
                     if(external_selector[k].event_as == state._event){
@@ -36,11 +37,17 @@ function installAcss(){
                         elt_new.forEach(elt=>{
                             
                             elt.addEventListener(external_selector[k].event,onmainevent(state._if,state._else,state.key,elts[j]))
-                            elt.addEventListener(builtin_event[external_selector[k].event],onsecondaryevent(state._if,state._else,state.key,elts[j]))                    })
+                            window.addEventListener(external_selector[k].event,()=>{})
+                            window.addEventListener(builtin_event[external_selector[k].event],onsecondaryevent(state._if,state._else,state.key,elts[j]),true)
+                            elt.addEventListener(builtin_event[external_selector[k].event],onsecondaryevent(state._if,state._else,state.key,elts[j])) 
+
+                                   })                    
                     }
             }
         }
     }
+
+
 
     function onmainevent(_if,_else,key,elts){
         function handler(e){

@@ -191,6 +191,7 @@ let args = process.argv.slice(2)
 let filename = args[0]
 let js_filename = args[1]
 
+function watch_acss(){
 let css_data = fs.readFileSync(filename, 'utf8')
 
 if (args[0].includes(".acss")){
@@ -207,8 +208,13 @@ if (args[0].includes(".acss")){
 }else{
     console.log("unknown extension")
 }
+}
+console.log("Watching file change")
+fs.watchFile(filename,{},()=>{
+    watch_acss()
+    console.log("recompiled the changes")
+})
 
-
-
+watch_acss()
 
 module.exports = {replaceCss,compileAcss}
