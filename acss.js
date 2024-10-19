@@ -12,7 +12,8 @@ HTMLElement.prototype.set_css_var = function(Var,value){
 function installAcss(){
     let selectors = setup_json
     let external_selector = external_hook;
-
+    // only two events
+    // both events are have corresponding opposite events
     let builtin_event = {
         "mousedown":"mouseup",
         "keydown":"keyup"
