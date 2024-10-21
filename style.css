@@ -18,21 +18,24 @@ body{
 }
 .navbar{
 	display:flex;
-	background-color: #efeeec;
+--if_110aae7a-33e9-4ee0-afed-0578546ac874:#efeeec;--else_110aae7a-33e9-4ee0-afed-0578546ac874:rgb(80,50,100);
+
+	background-color: var(--else_110aae7a-33e9-4ee0-afed-0578546ac874,var(--if_110aae7a-33e9-4ee0-afed-0578546ac874));
+	transition: background-color 0.5s ease;
 }
 .btn svg{
 	width: 20px;
 }
 .btn{
 
---if_2542c569-24b6-4d71-a7b1-93d2e40dc561:#221f3b;--else_2542c569-24b6-4d71-a7b1-93d2e40dc561:black;
+--if_2945a44d-d628-4c66-b4ec-0ab2d907e1eb:#221f3b;--else_2945a44d-d628-4c66-b4ec-0ab2d907e1eb:black;
 
-	background-color: var(--else_2542c569-24b6-4d71-a7b1-93d2e40dc561,var(--if_2542c569-24b6-4d71-a7b1-93d2e40dc561));
+	background-color: var(--else_2945a44d-d628-4c66-b4ec-0ab2d907e1eb,var(--if_2945a44d-d628-4c66-b4ec-0ab2d907e1eb));
 	width: var(--width);
 	height: 50px;
---if_eb8325c0-0384-4a81-9a9f-37c2f36941b3:lightblue;--else_eb8325c0-0384-4a81-9a9f-37c2f36941b3:yellow;
+--if_03fb8828-f920-4895-8c7c-7052ed8ee346:lightblue;--else_03fb8828-f920-4895-8c7c-7052ed8ee346:yellow;
 
-	color: var(--else_eb8325c0-0384-4a81-9a9f-37c2f36941b3,var(--if_eb8325c0-0384-4a81-9a9f-37c2f36941b3));
+	color: var(--else_03fb8828-f920-4895-8c7c-7052ed8ee346,var(--if_03fb8828-f920-4895-8c7c-7052ed8ee346));
 	display:flex;
 	align-items: center;
 	justify-content: center;
@@ -40,13 +43,13 @@ body{
 }
 .card{
 	background:rgb(51, 164, 239);
---if_10f75dbe-5577-4f86-bc88-5cd89e97a8b0:200px;--else_10f75dbe-5577-4f86-bc88-5cd89e97a8b0:var(--w);
+--if_b1c7093c-6f83-40fd-be07-08224da1c14d:200px;--else_b1c7093c-6f83-40fd-be07-08224da1c14d:var(--w);
 
-	width:var(--else_10f75dbe-5577-4f86-bc88-5cd89e97a8b0,var(--if_10f75dbe-5577-4f86-bc88-5cd89e97a8b0));
+	width:var(--else_b1c7093c-6f83-40fd-be07-08224da1c14d,var(--if_b1c7093c-6f83-40fd-be07-08224da1c14d));
 	transition:width 0.5s;
---if_3ec341e3-83c1-4ce6-ad55-f2d43d1c9bb4:200px;--else_3ec341e3-83c1-4ce6-ad55-f2d43d1c9bb4:var(--secheight);
+--if_7b207950-c98b-4e0b-96f7-feb9d19552c2:200px;--else_7b207950-c98b-4e0b-96f7-feb9d19552c2:var(--secheight);
 
-	height: var(--else_3ec341e3-83c1-4ce6-ad55-f2d43d1c9bb4,var(--if_3ec341e3-83c1-4ce6-ad55-f2d43d1c9bb4));
+	height: var(--else_7b207950-c98b-4e0b-96f7-feb9d19552c2,var(--if_7b207950-c98b-4e0b-96f7-feb9d19552c2));
 	overflow: hidden;
 }
 
@@ -89,6 +92,4 @@ body{
 .sidebar-item:hover svg{
 	transform: scale(1.1);
 }
-
-
 
