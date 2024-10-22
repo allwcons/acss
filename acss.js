@@ -80,3 +80,9 @@ function installAcss(){
 }
 
 }
+
+let bullitin_event={
+    "mousedown":"mouseup",
+    "keydown":"keyup",
+    "mouseover":"mouseout"
+}

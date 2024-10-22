@@ -19,7 +19,8 @@ body{
 }
 .navbar{
 	display:flex;
-	background-color: #efeeec;
+	background-color: if @mouseover ? #efeeec > rgb(80,50,100);
+	transition: background-color 0.5s ease;
 }
 .btn svg{
 	width: 20px;
@@ -82,6 +83,4 @@ body{
 .sidebar-item:hover svg{
 	transform: scale(1.1);
 }
-
-
 

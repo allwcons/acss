@@ -1,0 +1,5 @@
+
+          let setup_json = [{"_event":"mouseover","_if":"#efeeec","_else":"rgb(80,50,100)","selector":".navbar","key":"110aae7a-33e9-4ee0-afed-0578546ac874"},{"_event":"mousedown","_if":"#221f3b","_else":"black","selector":".btn","key":"2945a44d-d628-4c66-b4ec-0ab2d907e1eb"},{"_event":"mousedown","_if":"lightblue","_else":"yellow","selector":".btn","key":"03fb8828-f920-4895-8c7c-7052ed8ee346"},{"_event":"isBtnClicked","_if":"200px","_else":"var(--w)","selector":".card","key":"b1c7093c-6f83-40fd-be07-08224da1c14d"},{"_event":"mousedown","_if":"200px","_else":"var(--secheight)","selector":".card","key":"7b207950-c98b-4e0b-96f7-feb9d19552c2"}]
+          let external_hook = [{"selector":".btn","event":"mousedown","event_as":"isBtnClicked"}]
+          window.onload = () => installAcss()
+          

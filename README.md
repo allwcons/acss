@@ -1,7 +1,7 @@
 # Welcome to Acss
 
 ## requirement
-  `nodejs version` > 6
+  `nodejs version` 
 
 ***`To run acss`*** 
  - you need two file `acss.js` and `compiler.js`
